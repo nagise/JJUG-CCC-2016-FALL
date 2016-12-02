@@ -3,8 +3,8 @@ package s1;
 import java.util.ArrayList;
 
 /**
- * User‚Ìˆê——‚ğ•\‚·Œ^B
- * IS-AŠÖŒW‚ÌƒTƒ“ƒvƒ‹‚Æ‚µ‚ÄArrayList‚ğŒp³‚µ‚½Œ^‚Æ‚µ‚Ä’è‹`B
+ * Userã®ä¸€è¦§ã‚’è¡¨ã™å‹ã€‚
+ * IS-Aé–¢ä¿‚ã®ã‚µãƒ³ãƒ—ãƒ«ã¨ã—ã¦ArrayListã‚’ç¶™æ‰¿ã—ãŸå‹ã¨ã—ã¦å®šç¾©ã€‚
  * 
  * @author nagise
  */

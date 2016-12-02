@@ -1,6 +1,6 @@
 /**
- * ƒZƒbƒVƒ‡ƒ“—pƒTƒ“ƒvƒ‹ƒR[ƒhB
- * IS-AŠÖŒW‚ÆHAS-AŠÖŒW
+ * ã‚»ãƒƒã‚·ãƒ§ãƒ³ç”¨ã‚µãƒ³ãƒ—ãƒ«ã‚³ãƒ¼ãƒ‰ã€‚
+ * IS-Aé–¢ä¿‚ã¨HAS-Aé–¢ä¿‚
  * 
  * @author nagise
  */

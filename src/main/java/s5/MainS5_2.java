@@ -7,7 +7,7 @@ import java.util.function.Function;
 import s3.*;
 
 /**
- * ƒpƒ‰ƒƒ^ƒ‰ƒCƒYƒhƒ^ƒCƒv‚Ì•Ï«‚ÌƒTƒ“ƒvƒ‹
+ * ãƒ‘ãƒ©ãƒ¡ã‚¿ãƒ©ã‚¤ã‚ºãƒ‰ã‚¿ã‚¤ãƒ—ã®å¤‰æ€§ã®ã‚µãƒ³ãƒ—ãƒ«
  * 
  * @author nagise
  */
@@ -16,10 +16,10 @@ public class MainS5_2 {
 		List<B> list = new ArrayList<>();
 		list.add(new B());
 
-		// list.stream().map() ‚Ìˆø”‚Í
-		// Function<? super T,? extends R>Œ^
+		// list.stream().map() ã®å¼•æ•°ã¯
+		// Function<? super T,? extends R>å‹
 		
-		// <B, B> ‚Í“–‘R—˜—p‰Â”\
+		// <B, B> ã¯å½“ç„¶åˆ©ç”¨å¯èƒ½
 		Function<B, B> func1 = (B b) -> new B();
 		list.stream().map(func1);
 

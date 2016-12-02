@@ -3,9 +3,9 @@ package hell;
 public class KeyGroupImpl extends KeyGroup<KeyGroupImpl> {
 	private static final KeyGroupImpl singleton = new KeyGroupImpl();
 
-	/** KEY_1‚Å‚Í’l‚ÍStringŒ^ */
+	/** KEY_1ã§ã¯å€¤ã¯Stringå‹ */
 	public static final Key<String> KEY_1 = singleton.new Key<String>();
 
-	/** KEY_2‚Å‚Í’l‚ÍIntegerŒ^ */
+	/** KEY_2ã§ã¯å€¤ã¯Integerå‹ */
 	public static final Key<Integer> KEY_2 = singleton.new Key<Integer>();
 }

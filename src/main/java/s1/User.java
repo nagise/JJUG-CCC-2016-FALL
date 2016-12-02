@@ -1,8 +1,8 @@
 package s1;
 
 /**
- * ���[�U�[�p�̌^�B
- * �T���v���Ȃ̂Œ�`�͓K���ł��B
+ * ユーザー用の型。
+ * サンプルなので定義は適当です。
  * 
  * @author nagise
  */
@@ -10,9 +10,9 @@ public class User {
 	public String name;
 	public int age;
 
-	/** �f�t�H���g�R���X�g���N�^ */
+	/** デフォルトコンストラクタ */
 	public User() {}
-	/** �R���X�g���N�^ */
+	/** コンストラクタ */
 	public User(String name, int age) {
 		this.name = name;
 		this.age = age;

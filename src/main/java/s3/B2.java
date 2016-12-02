@@ -1,7 +1,7 @@
 package s3;
 
 /**
- * 継承関係のサンプル。子クラス2
+ * 邯呎価髢｢菫ゅ�ｮ繧ｵ繝ｳ繝励Ν縲ょｭ舌け繝ｩ繧ｹ2
  * @author nagise
  */
 public class B2 extends A {

@@ -3,7 +3,7 @@ package hell;
 import java.util.Iterator;
 
 /**
- * ƒ^ƒvƒ‹‚ÌŠe—v‘f‚ª•¡”ŒÂ‚Ä‚é‚Æv‚¢‚Ë‚¦
+ * ã‚¿ãƒ—ãƒ«ã®å„è¦ç´ ãŒè¤‡æ•°å€‹æŒã¦ã‚‹ã¨æ€ã„ã­ãˆ
  * 
  * @author nagise
  *
@@ -16,7 +16,7 @@ implements Iterator<Tuple<T1, T2>> {
 	Iterator<? extends T2> ite2;
 
 	/**
-	 * 2‚Â‚ÌItarator‚©‚çTupleIterator‚ğì‚é
+	 * 2ã¤ã®Itaratorã‹ã‚‰TupleIteratorã‚’ä½œã‚‹
 	 */
 	public TupleIterator(Iterator<? extends T1> ite1, Iterator<? extends T2> ite2) {
 		this.ite1 = ite1;
@@ -24,14 +24,14 @@ implements Iterator<Tuple<T1, T2>> {
 	}
 
 	/**
-	 * @throws IllegalStateException ‚Ó‚½‚Â‚ÌItarator‚Ì—v‘f”‚ª•sˆê’v‚Ìê‡
+	 * @throws IllegalStateException ãµãŸã¤ã®Itaratorã®è¦ç´ æ•°ãŒä¸ä¸€è‡´ã®å ´åˆ
 	 */
 	@Override
 	public boolean hasNext() {
 		boolean n1 = ite1.hasNext();
 		boolean n2 = ite2.hasNext();
 		if (n1 ^ n2) {
-			throw new IllegalStateException("ŒÂ”‚Ì•sˆê’v");
+			throw new IllegalStateException("å€‹æ•°ã®ä¸ä¸€è‡´");
 		}
 		return n1;
 	}
@@ -47,7 +47,7 @@ implements Iterator<Tuple<T1, T2>> {
 		ite2.remove();
 	}
 
-	/** Šg’£ */
+	/** æ‹¡å¼µ */
 	public class Ex<T3> extends TupleIterator<Tuple<T1, T2>, T3> {
 		public Ex(Iterator<? extends T3> ite3) {
 			super(TupleIterator.this, ite3);

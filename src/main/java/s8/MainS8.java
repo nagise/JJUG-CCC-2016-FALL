@@ -12,89 +12,89 @@ import com.google.gson.Gson;
 import s1.User;
 
 /**
- * Œ^•Ï”‚ÌƒCƒ“ƒXƒ^ƒ“ƒX‚ğƒƒ\ƒbƒh“à‚Å¶¬‚µ‚½‚¢ƒP[ƒX‚Ìl@‚¢‚ë‚¢‚ë
+ * å‹å¤‰æ•°ã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã‚’ãƒ¡ã‚½ãƒƒãƒ‰å†…ã§ç”Ÿæˆã—ãŸã„ã‚±ãƒ¼ã‚¹ã®è€ƒå¯Ÿã„ã‚ã„ã‚
  * 
  * @author nagise
  */
 public class MainS8 {
 	public static void main(String[] args) {
-		// JSONŒ`®‚©‚çƒIƒuƒWƒFƒNƒg‚É•ÏŠ·‚·‚éƒ‰ƒCƒuƒ‰ƒŠ
-		// ˆø”‚ÉClassƒIƒuƒWƒFƒNƒg‚ğ“n‚µAƒŠƒtƒŒƒNƒVƒ‡ƒ“‚ÅƒCƒ“ƒXƒ^ƒ“ƒX‚ğì‚Á‚Ä‚¢‚é
+		// JSONå½¢å¼ã‹ã‚‰ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã«å¤‰æ›ã™ã‚‹ãƒ©ã‚¤ãƒ–ãƒ©ãƒª
+		// å¼•æ•°ã«Classã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’æ¸¡ã—ã€ãƒªãƒ•ãƒ¬ã‚¯ã‚·ãƒ§ãƒ³ã§ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã‚’ä½œã£ã¦ã„ã‚‹
 		Gson gson = new Gson();
-		User user = gson.fromJson("{\"name\":\"ƒfƒ…[ƒN\",\"age\":20}", User.class);
+		User user = gson.fromJson("{\"name\":\"ãƒ‡ãƒ¥ãƒ¼ã‚¯\",\"age\":20}", User.class);
 		System.out.println(user);
 		
-		// C#“I‚È—‘z (Œ^„˜_‚ª‚¢‚³‚³‚©•|‚¢‚ª) (Java‚Å‚Í•’Ê‚É‚Í–³—)
+		// C#çš„ãªç†æƒ³ (å‹æ¨è«–ãŒã„ã•ã•ã‹æ€–ã„ãŒ) (Javaã§ã¯æ™®é€šã«ã¯ç„¡ç†)
 		User u2 = sample1("{}");
-		// C#“I‚ÈƒoƒCƒ“ƒh‚Ì–¾¦ƒpƒ^[ƒ“ (Java‚Å‚Í•’Ê‚É‚Í–³—)
+		// C#çš„ãªãƒã‚¤ãƒ³ãƒ‰ã®æ˜ç¤ºãƒ‘ã‚¿ãƒ¼ãƒ³ (Javaã§ã¯æ™®é€šã«ã¯ç„¡ç†)
 		User u3 = MainS8.<User>sample1("{}");
-		// Java“I‚È‘Ã‹¦“_
-		// ƒfƒtƒHƒ‹ƒgƒRƒ“ƒXƒgƒ‰ƒNƒ^‚ª•K{
-		// ƒfƒtƒHƒ‹ƒgƒRƒ“ƒXƒgƒ‰ƒNƒ^‚Ì—L–³‚ÍƒRƒ“ƒpƒCƒ‹‚Éƒ`ƒFƒbƒN‚Å‚«‚È‚¢
+		// Javaçš„ãªå¦¥å”ç‚¹
+		// ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ãŒå¿…é ˆ
+		// ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ã®æœ‰ç„¡ã¯ã‚³ãƒ³ãƒ‘ã‚¤ãƒ«æ™‚ã«ãƒã‚§ãƒƒã‚¯ã§ããªã„
 		User u4 = MainS8.sample2("{}", User.class);
 
-		// Java8•—
-		// Supplier‚ğg‚¤‚±‚Æ‚ÅƒfƒtƒHƒ‹ƒgƒRƒ“ƒXƒgƒ‰ƒNƒ^ˆÈŠO‚Å‚à‘Î‰‚Å‚«‚é
-		// ƒpƒ‰ƒƒ^ƒ‰ƒCƒYƒhƒ^ƒCƒv‚Å‚à‘Î‰‚Å‚«‚é
+		// Java8é¢¨
+		// Supplierã‚’ä½¿ã†ã“ã¨ã§ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ä»¥å¤–ã§ã‚‚å¯¾å¿œã§ãã‚‹
+		// ãƒ‘ãƒ©ãƒ¡ã‚¿ãƒ©ã‚¤ã‚ºãƒ‰ã‚¿ã‚¤ãƒ—ã§ã‚‚å¯¾å¿œã§ãã‚‹
 		User u5 = MainS8.sample3("{}", User::new);
 		ArrayList<User> u6 = MainS8.sample3("[{},{}]", ArrayList::new);
 		ArrayList<User> u7 = MainS8.sample3("[{},{}]", ArrayList<User>::new);
 		ArrayList<User> u8 = MainS8.sample3("[{},{}]", ()-> new ArrayList<>());
 		
-		// — ƒƒU
-		// ƒfƒtƒHƒ‹ƒgƒRƒ“ƒXƒgƒ‰ƒNƒ^‚ª•K{
+		// è£ãƒ¯ã‚¶
+		// ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ãŒå¿…é ˆ
 		User u9 = MainS8.sample4("{}");
-		// ˆêŒ©—‘z“I‚ÉŒ©‚¦‚é‚ªÀ‚ÍIDE‚Ì“ü—Í•âŠ®‚Æ‚Í‘Š«‚ªˆ«‚­‚Äg‚¢‚É‚­‚¢
-		// T...dummy ‚É null‚ğ“n‚·‚ÆAŒ^‚ğæ“¾‚·‚é‚½‚ß‚Ì”z—ñ‚ª“n‚³‚ê‚È‚¢‚Ì‚ÅƒoƒO‚é
-		// null ‚ª T[] ‚Æ‚à new T[]{null}‚Æ‚àæ‚ê‚é‚Ì‚Å•\Œ»‚ªB–†‚É
+		// ä¸€è¦‹ç†æƒ³çš„ã«è¦‹ãˆã‚‹ãŒå®Ÿã¯IDEã®å…¥åŠ›è£œå®Œã¨ã¯ç›¸æ€§ãŒæ‚ªãã¦ä½¿ã„ã«ãã„
+		// T...dummy ã« nullã‚’æ¸¡ã™ã¨ã€å‹ã‚’å–å¾—ã™ã‚‹ãŸã‚ã®é…åˆ—ãŒæ¸¡ã•ã‚Œãªã„ã®ã§ãƒã‚°ã‚‹
+		// null ãŒ T[] ã¨ã‚‚ new T[]{null}ã¨ã‚‚å–ã‚Œã‚‹ã®ã§è¡¨ç¾ãŒæ›–æ˜§ã«
 		User u10 = MainS8.sample4("{}", null);
-		// ƒeƒNƒjƒbƒN‚ğ—‰ğ‚³‚ê‚È‚¢‚Æ‚Ş‚µ‚ë‹Lq‚ª‚Ğ‚Ç‚¢‚±‚Æ‚É
+		// ãƒ†ã‚¯ãƒ‹ãƒƒã‚¯ã‚’ç†è§£ã•ã‚Œãªã„ã¨ã‚€ã—ã‚è¨˜è¿°ãŒã²ã©ã„ã“ã¨ã«
 		User u11 = MainS8.sample4("{}", new User[]{null});
 
-		// Factory‚©‚çs‚­ê‡‚¾‚Æ‚»‚¿‚ç‚©‚çŒ^•Ï”‚ÉƒoƒCƒ“ƒh‚³‚ê‚½Œ^‚ğ“¾‚é‚±‚Æ‚à
-		// ƒVƒ`ƒ…ƒG[ƒVƒ‡ƒ“‚³‚¦ƒnƒ}‚ê‚Îg‚¦‚é
+		// Factoryã‹ã‚‰è¡Œãå ´åˆã ã¨ãã¡ã‚‰ã‹ã‚‰å‹å¤‰æ•°ã«ãƒã‚¤ãƒ³ãƒ‰ã•ã‚ŒãŸå‹ã‚’å¾—ã‚‹ã“ã¨ã‚‚
+		// ã‚·ãƒãƒ¥ã‚¨ãƒ¼ã‚·ãƒ§ãƒ³ã•ãˆãƒãƒã‚Œã°ä½¿ãˆã‚‹
 		Factory<User> factory = new Factory<User>();
 		User u12 = factory.sample5("{}");
 	}
 	
 	public static <T> T sample1(String json) {
-		// Java‚Å‚Í–³—
+		// Javaã§ã¯ç„¡ç†
 		return null;
 	}
 	/**
-	 * ‚æ‚­Œ©‚©‚¯‚éƒŠƒtƒŒƒNƒVƒ‡ƒ“‚Å‘Î‰‚·‚é•û®B
-	 * ã“_‚Æ‚µ‚Ä‚ÍArrayList‚Ì‚æ‚¤‚Èƒpƒ‰ƒƒ^ƒ‰ƒCƒYƒhƒ^ƒCƒv‚ğˆµ‚¤‚Ì‚É¢‚é
-	 * @param clazz ƒŠƒtƒŒƒNƒVƒ‡ƒ“‚Ånew‚·‚é‚½‚ß‚ÌClassƒIƒuƒWƒFƒNƒg
+	 * ã‚ˆãè¦‹ã‹ã‘ã‚‹ãƒªãƒ•ãƒ¬ã‚¯ã‚·ãƒ§ãƒ³ã§å¯¾å¿œã™ã‚‹æ–¹å¼ã€‚
+	 * å¼±ç‚¹ã¨ã—ã¦ã¯ArrayListã®ã‚ˆã†ãªãƒ‘ãƒ©ãƒ¡ã‚¿ãƒ©ã‚¤ã‚ºãƒ‰ã‚¿ã‚¤ãƒ—ã‚’æ‰±ã†ã®ã«å›°ã‚‹
+	 * @param clazz ãƒªãƒ•ãƒ¬ã‚¯ã‚·ãƒ§ãƒ³ã§newã™ã‚‹ãŸã‚ã®Classã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ
 	 */
 	public static <T> T sample2(String json, Class<T> clazz) {
 		try {
 			T ret = clazz.newInstance();
-			// –{“–‚Í‚±‚±‚Åjson‚ğƒp[ƒX‚µ‚Ä’l‚ğŠi”[‚·‚éˆ—‚ª“ü‚é
+			// æœ¬å½“ã¯ã“ã“ã§jsonã‚’ãƒ‘ãƒ¼ã‚¹ã—ã¦å€¤ã‚’æ ¼ç´ã™ã‚‹å‡¦ç†ãŒå…¥ã‚‹
 			return ret;
 		} catch (Exception e) {
 			throw new RuntimeException(e);
 		}
 	}
 	/**
-	 * Java8‚©‚ç‚ÍSupplier‚Æƒƒ\ƒbƒhQÆ‚ÅÀ‘•‚·‚é‚Ì‚ª”Ä—p«‚ª‚‚­ƒXƒbƒLƒŠ‚·‚é
-	 * @param supplier ƒCƒ“ƒXƒ^ƒ“ƒX‚ğì‚Á‚Ä•Ô‚·
+	 * Java8ã‹ã‚‰ã¯Supplierã¨ãƒ¡ã‚½ãƒƒãƒ‰å‚ç…§ã§å®Ÿè£…ã™ã‚‹ã®ãŒæ±ç”¨æ€§ãŒé«˜ãã‚¹ãƒƒã‚­ãƒªã™ã‚‹
+	 * @param supplier ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã‚’ä½œã£ã¦è¿”ã™
 	 */
 	public static <T> T sample3(String json, Supplier<T> supplier) {
 		T ret = supplier.get();
-		// –{“–‚Í‚±‚±‚Åjson‚ğƒp[ƒX‚µ‚Ä’l‚ğŠi”[‚·‚éˆ—‚ª“ü‚é
+		// æœ¬å½“ã¯ã“ã“ã§jsonã‚’ãƒ‘ãƒ¼ã‚¹ã—ã¦å€¤ã‚’æ ¼ç´ã™ã‚‹å‡¦ç†ãŒå…¥ã‚‹
 		return ret;
 	}
 	/**
-	 * ‰Â•Ï’·”z—ñ‚ÅŒ^‚ğ“n‚·— ƒƒUB‚ ‚Ü‚è—Ç‚­‚Í‚È‚¢
+	 * å¯å¤‰é•·é…åˆ—ã§å‹ã‚’æ¸¡ã™è£ãƒ¯ã‚¶ã€‚ã‚ã¾ã‚Šè‰¯ãã¯ãªã„
 	 * @param json
-	 * @param dummy ”z—ñƒIƒuƒWƒFƒNƒg‚ª“n‚é‚Ì‚Å‚»‚±‚©‚çƒŠƒtƒŒƒNƒVƒ‡ƒ“‚ÅŒ^‚ğ“¾‚é
+	 * @param dummy é…åˆ—ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆãŒæ¸¡ã‚‹ã®ã§ãã“ã‹ã‚‰ãƒªãƒ•ãƒ¬ã‚¯ã‚·ãƒ§ãƒ³ã§å‹ã‚’å¾—ã‚‹
 	 */
 	public static <T> T sample4(String json, T ... dummy) {
 		try {
 			@SuppressWarnings("unchecked")
 			Class<T> type = (Class<T>) dummy.getClass().getComponentType();
 			T ret = type.newInstance();
-			// –{“–‚Í‚±‚±‚Åjson‚ğƒp[ƒX‚µ‚Ä’l‚ğŠi”[‚·‚éˆ—‚ª“ü‚é
+			// æœ¬å½“ã¯ã“ã“ã§jsonã‚’ãƒ‘ãƒ¼ã‚¹ã—ã¦å€¤ã‚’æ ¼ç´ã™ã‚‹å‡¦ç†ãŒå…¥ã‚‹
 			return ret;
 		} catch (Exception e) {
 			throw new RuntimeException(e);
@@ -102,7 +102,7 @@ public class MainS8 {
 	}
 	
 	/**
-	 * Factory ‚ğŒp³‚µ‚ÄŒ^•Ï”‚ğƒoƒCƒ“ƒh‚·‚éƒP[ƒX
+	 * Factory ã‚’ç¶™æ‰¿ã—ã¦å‹å¤‰æ•°ã‚’ãƒã‚¤ãƒ³ãƒ‰ã™ã‚‹ã‚±ãƒ¼ã‚¹
 	 * @param <T>
 	 */
 	static class Factory<T> {
@@ -111,7 +111,7 @@ public class MainS8 {
 				Class<T> type = getGenericType(this.getClass(),
 						Factory.class, "T");
 				T ret = type.newInstance();
-				// –{“–‚Í‚±‚±‚Åjson‚ğƒp[ƒX‚µ‚Ä’l‚ğŠi”[‚·‚éˆ—‚ª“ü‚é
+				// æœ¬å½“ã¯ã“ã“ã§jsonã‚’ãƒ‘ãƒ¼ã‚¹ã—ã¦å€¤ã‚’æ ¼ç´ã™ã‚‹å‡¦ç†ãŒå…¥ã‚‹
 				return ret;
 			} catch (Exception e) {
 				throw new RuntimeException(e);
@@ -120,22 +120,22 @@ public class MainS8 {
 	}
 
 	/**
-	 * “n‚³‚ê‚½Œ^‚©‚çŒp³ŠK‘w‚ğ“o‚Á‚ÄA
-	 * w’è‚Ìe‚ÌŒ^‚Ìw’è‚Ì–¼‘O‚ÌƒWƒFƒlƒŠƒNƒXŒ^ƒpƒ‰ƒ[ƒ^‚ª
-	 * Œp³‚Ì‰ß’ö‚Å‰½Œ^‚Å‹ïŒ»‰»‚³‚ê‚Ä‚¢‚é‚©‚ğ‘–¸‚µ‚Ä•Ô‚·B
-	 * @param clazz ‘–¸ŠJn‚·‚éŒ^
-	 * @param targetClass ‘–¸‚·‚é‘ÎÛ‚ÌƒWƒFƒlƒŠƒNƒXŒ^ƒpƒ‰ƒ[ƒ^‚ğ‚ÂŒ^B
-	 * ‘–¸ŠJnŒ^‚Ìe‚Å‚ ‚é•K—v‚ª‚ ‚éB
-	 * @param targetTypeName ‰½Œ^‚Å‹ïŒ»‰»‚³‚ê‚½‚ğŠm”F‚µ‚½‚¢Œ^ƒpƒ‰ƒ[ƒ^‚ÌƒvƒŒ[ƒXƒzƒ‹ƒ_–¼
-	 * @return ‹ïŒ»‰»‚³‚ê‚½Œ^
+	 * æ¸¡ã•ã‚ŒãŸå‹ã‹ã‚‰ç¶™æ‰¿éšå±¤ã‚’ç™»ã£ã¦ã€
+	 * æŒ‡å®šã®è¦ªã®å‹ã®æŒ‡å®šã®åå‰ã®ã‚¸ã‚§ãƒãƒªã‚¯ã‚¹å‹ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ãŒ
+	 * ç¶™æ‰¿ã®éç¨‹ã§ä½•å‹ã§å…·ç¾åŒ–ã•ã‚Œã¦ã„ã‚‹ã‹ã‚’èµ°æŸ»ã—ã¦è¿”ã™ã€‚
+	 * @param clazz èµ°æŸ»é–‹å§‹ã™ã‚‹å‹
+	 * @param targetClass èµ°æŸ»ã™ã‚‹å¯¾è±¡ã®ã‚¸ã‚§ãƒãƒªã‚¯ã‚¹å‹ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã‚’æŒã¤å‹ã€‚
+	 * èµ°æŸ»é–‹å§‹å‹ã®è¦ªã§ã‚ã‚‹å¿…è¦ãŒã‚ã‚‹ã€‚
+	 * @param targetTypeName ä½•å‹ã§å…·ç¾åŒ–ã•ã‚ŒãŸã‚’ç¢ºèªã—ãŸã„å‹ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã®ãƒ—ãƒ¬ãƒ¼ã‚¹ãƒ›ãƒ«ãƒ€å
+	 * @return å…·ç¾åŒ–ã•ã‚ŒãŸå‹
 	 */
 	public static <T> Class<T> getGenericType(
 	    Class<?> clazz, Class<?> targetClass,
 	    String targetTypeName) {
 	  if (!targetClass.isAssignableFrom(clazz)) {
 	    throw new IllegalArgumentException(
-	        "Œ^" + clazz.getName() + "‚ÍAŒ^"
-	        + targetClass.getName() + "‚ğŒp³‚µ‚Ä‚¢‚Ü‚¹‚ñ");
+	        "å‹" + clazz.getName() + "ã¯ã€å‹"
+	        + targetClass.getName() + "ã‚’ç¶™æ‰¿ã—ã¦ã„ã¾ã›ã‚“");
 	  }
 	  Stack<Class<?>> stack = new Stack<Class<?>>();
 	  while (!targetClass.equals(clazz.getSuperclass())) {
@@ -145,11 +145,11 @@ public class MainS8 {
 	  return getGenericTypeImpl(clazz, targetTypeName, stack);
 	}
 	/**
-	 * Œ^ƒpƒ‰ƒ[ƒ^‚Ì‹ïÛŒ^æ“¾‚ÌÀ‘•BÄ‹Aˆ—‚³‚ê‚éB
-	 * @param clazz Œ»İ‚Ì‘–¸‘ÎÛŒ^
-	 * @param targetTypeName Œ»İ‚Ì‘–¸‘ÎÛ‚ÌƒWƒFƒlƒŠƒNƒXŒ^ƒpƒ‰ƒ[ƒ^–¼
-	 * @param stack Œ»İ‚Ì‘–¸‘ÎÛŒ^ˆÈ‰º‚ÌŒp³ŠK‘w‚ªÏ‚Ü‚ê‚½Stack
-	 * @return ŠY“–Œ^ƒpƒ‰ƒ[ƒ^‚Ì‹ïŒ»‰»‚³‚ê‚½Œ^
+	 * å‹ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã®å…·è±¡å‹å–å¾—ã®å®Ÿè£…ã€‚å†å¸°å‡¦ç†ã•ã‚Œã‚‹ã€‚
+	 * @param clazz ç¾åœ¨ã®èµ°æŸ»å¯¾è±¡å‹
+	 * @param targetTypeName ç¾åœ¨ã®èµ°æŸ»å¯¾è±¡ã®ã‚¸ã‚§ãƒãƒªã‚¯ã‚¹å‹ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿å
+	 * @param stack ç¾åœ¨ã®èµ°æŸ»å¯¾è±¡å‹ä»¥ä¸‹ã®ç¶™æ‰¿éšå±¤ãŒç©ã¾ã‚ŒãŸStack
+	 * @return è©²å½“å‹ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã®å…·ç¾åŒ–ã•ã‚ŒãŸå‹
 	 */
 	@SuppressWarnings("unchecked")
 	private static <T> Class<T> getGenericTypeImpl(Class<?> clazz,
@@ -157,7 +157,7 @@ public class MainS8 {
 	  TypeVariable<? extends Class<?>>[] superGenTypeAray
 	    = clazz.getSuperclass().getTypeParameters();
 
-	  // ‘–¸‘ÎÛ‚ÌŒ^ƒpƒ‰ƒ[ƒ^‚Ì–¼Ì(T‚È‚Ç)‚©‚çéŒ¾‚ÌƒCƒ“ƒfƒbƒNƒX‚ğæ“¾
+	  // èµ°æŸ»å¯¾è±¡ã®å‹ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã®åç§°(Tãªã©)ã‹ã‚‰å®£è¨€ã®ã‚¤ãƒ³ãƒ‡ãƒƒã‚¯ã‚¹ã‚’å–å¾—
 	  int index = 0;
 	  boolean existFlag = false;
 	  for (TypeVariable<? extends Class<?>> type : superGenTypeAray) {
@@ -169,30 +169,30 @@ public class MainS8 {
 	  }
 	  if (!existFlag) {
 	    throw new IllegalArgumentException(
-	        targetTypeName + "‚É‡’v‚·‚éƒWƒFƒlƒŠƒNƒXŒ^ƒpƒ‰ƒ[ƒ^‚ª‚İ‚Â‚©‚è‚Ü‚¹‚ñ");
+	        targetTypeName + "ã«åˆè‡´ã™ã‚‹ã‚¸ã‚§ãƒãƒªã‚¯ã‚¹å‹ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ãŒã¿ã¤ã‹ã‚Šã¾ã›ã‚“");
 	  }
 
-	  // ‘–¸‘ÎÛ‚ÌŒ^ƒpƒ‰ƒ[ƒ^‚ª‰½Œ^‚Æ‚³‚ê‚Ä‚¢‚é‚Ì‚©‚ğæ“¾
+	  // èµ°æŸ»å¯¾è±¡ã®å‹ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ãŒä½•å‹ã¨ã•ã‚Œã¦ã„ã‚‹ã®ã‹ã‚’å–å¾—
 	  ParameterizedType type = (ParameterizedType) clazz.getGenericSuperclass();
 	  Type y = type.getActualTypeArguments()[index];
 
-	  // ‹ïÛŒ^‚ÅŒp³‚³‚ê‚Ä‚¢‚éê‡
+	  // å…·è±¡å‹ã§ç¶™æ‰¿ã•ã‚Œã¦ã„ã‚‹å ´åˆ
 	  if (y instanceof Class) {
 	    return (Class<T>)y;
 	  }
-	  // ƒWƒFƒlƒŠƒbƒNƒpƒ‰ƒ[ƒ^‚Ìê‡
+	  // ã‚¸ã‚§ãƒãƒªãƒƒã‚¯ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã®å ´åˆ
 	  if (y instanceof TypeVariable) {
 	    TypeVariable<Class<?>> tv = (TypeVariable<Class<?>>)y;
-	    // Ä‹A‚µ‚Ä“¯–¼‚ÌŒ^ƒpƒ‰ƒ[ƒ^‚ğŒp³ŠK‘w‚ğ‰º‚è‚È‚ª‚ç‰ğŒˆ‚ğ‚İ‚é
+	    // å†å¸°ã—ã¦åŒåã®å‹ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã‚’ç¶™æ‰¿éšå±¤ã‚’ä¸‹ã‚ŠãªãŒã‚‰è§£æ±ºã‚’è©¦ã¿ã‚‹
 	    Class<?> sub = stack.pop();
 	    return getGenericTypeImpl(sub, tv.getName(), stack);
 	  }
-	  // ƒWƒFƒlƒŠƒbƒNŒ^ƒpƒ‰ƒ[ƒ^‚ğ‚ÂŒ^‚Ìê‡
+	  // ã‚¸ã‚§ãƒãƒªãƒƒã‚¯å‹ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã‚’æŒã¤å‹ã®å ´åˆ
 	  if (y instanceof ParameterizedType) {
 	    ParameterizedType pt = (ParameterizedType) y;
 	    return (Class<T>) pt.getRawType();
 	  }
-	  throw new IllegalArgumentException("—\Šú‚¹‚ÊŒ^ : "
+	  throw new IllegalArgumentException("äºˆæœŸã›ã¬å‹ : "
 	      + y.toString() + " (" + y.getClass() + ")");
 	}
 }

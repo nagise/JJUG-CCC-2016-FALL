@@ -1,24 +1,24 @@
 package s4;
 
 /**
- * インスタンススコープのジェネリクスのサンプル
+ * 繧､繝ｳ繧ｹ繧ｿ繝ｳ繧ｹ繧ｹ繧ｳ繝ｼ繝励�ｮ繧ｸ繧ｧ繝阪Μ繧ｯ繧ｹ縺ｮ繧ｵ繝ｳ繝励Ν
  * 
  * @author nagise
  */
 public class MainS4_3 {
 
 	public static void main(String[] args) {
-		// インスタンススコープのジェネリクスのサンプル
+		// 繧､繝ｳ繧ｹ繧ｿ繝ｳ繧ｹ繧ｹ繧ｳ繝ｼ繝励�ｮ繧ｸ繧ｧ繝阪Μ繧ｯ繧ｹ縺ｮ繧ｵ繝ｳ繝励Ν
 		Hoge<String> hoge = new Hoge<String>();
 		
-		// ダイヤモンドオペレーター
+		// 繝繧､繝､繝｢繝ｳ繝峨が繝壹Ξ繝ｼ繧ｿ繝ｼ
 		Hoge<String> hoge2 = new Hoge<>();
 	}
 
 	/**
-	 * 型変数をもつクラスの宣言サンプル
+	 * 蝙句､画焚繧偵ｂ縺､繧ｯ繝ｩ繧ｹ縺ｮ螳｣險繧ｵ繝ｳ繝励Ν
 	 * 
-	 * @param <T> 型変数の宣言サンプル
+	 * @param <T> 蝙句､画焚縺ｮ螳｣險繧ｵ繝ｳ繝励Ν
 	 */
 	static class Hoge<T> {}
 }

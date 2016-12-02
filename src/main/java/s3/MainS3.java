@@ -6,13 +6,13 @@ public class MainS3 {
 		o[0] = 123;
 		{
 			A a = new B();  // OK
-			B b = (B) a;  // ‚±‚Ì•ÏŠ·‚ÍˆÀ‘S‚Æ‚ÍŒÀ‚ç‚È‚¢
+			B b = (B) a;  // ã“ã®å¤‰æ›ã¯å®‰å…¨ã¨ã¯é™ã‚‰ãªã„
 			System.out.println(b);
 		}
 
 		{
 			A a = new B2();  // OK
-			B b = (B) a;  // ClassCastException À‘Ì‚ÍB2‚Å‚ ‚é‚½‚ß
+			B b = (B) a;  // ClassCastException å®Ÿä½“ã¯B2ã§ã‚ã‚‹ãŸã‚
 			System.out.println(b);
 		}
 	}

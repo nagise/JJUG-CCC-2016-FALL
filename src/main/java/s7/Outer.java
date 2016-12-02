@@ -1,7 +1,7 @@
 package s7;
 
 /**
- * ŠO‘¤‚ÌƒNƒ‰ƒX
+ * å¤–å´ã®ã‚¯ãƒ©ã‚¹
  * @author nagise
  *
  * @param <T>
@@ -9,10 +9,10 @@ package s7;
 public class Outer<T> {
 
 	/**
-	 * “à•”ƒNƒ‰ƒXBstatic‚Å‚Í‚È‚¢“_‚É’ˆÓ
+	 * å†…éƒ¨ã‚¯ãƒ©ã‚¹ã€‚staticã§ã¯ãªã„ç‚¹ã«æ³¨æ„
 	 */
 	public class Inner {
-		/** ŠO‘¤‚ÌŒ^•Ï” T ‚ªg‚¦‚é */
+		/** å¤–å´ã®å‹å¤‰æ•° T ãŒä½¿ãˆã‚‹ */
 		T genericField;
 	}
 }

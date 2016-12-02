@@ -4,14 +4,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * ジェネリクスの変性のサンプル
+ * 繧ｸ繧ｧ繝阪Μ繧ｯ繧ｹ縺ｮ螟画ｧ縺ｮ繧ｵ繝ｳ繝励Ν
  * @author nagise
  */
 public class MainS3_3 {
 	public static void main(String[] args) {
 		List<B> list;
 		list = new ArrayList<B>(); // OK
-		list = new ArrayList<A>(); // 当然ダメ
-		list = new ArrayList<C>(); // これもダメ
+		list = new ArrayList<A>(); // 蠖鍋┯繝繝｡
+		list = new ArrayList<C>(); // 縺薙ｌ繧ゅム繝｡
 	}
 }

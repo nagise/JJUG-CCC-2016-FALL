@@ -1,8 +1,8 @@
 package hell;
 
 /**
- * ‰Â•Ï’·Œ^•Ï”‚ÌƒTƒ“ƒvƒ‹B
- * ƒ^ƒvƒ‹‚ğ‰Â•Ï’·‚ÉB
+ * å¯å¤‰é•·å‹å¤‰æ•°ã®ã‚µãƒ³ãƒ—ãƒ«ã€‚
+ * ã‚¿ãƒ—ãƒ«ã‚’å¯å¤‰é•·ã«ã€‚
  * 
  * @author nagise
  *
@@ -21,7 +21,7 @@ public class Tuple<T1, T2> {
 		return ""+t1+", "+t2;
 	}
 
-	/** ƒ^ƒvƒ‹‚ÌŠg’£ */
+	/** ã‚¿ãƒ—ãƒ«ã®æ‹¡å¼µ */
 	public class Ex<T3> extends Tuple<Tuple<T1, T2>, T3> {
 		public Ex(T3 t3) {
 			super (Tuple.this, t3);

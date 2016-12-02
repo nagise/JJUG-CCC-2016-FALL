@@ -1,37 +1,37 @@
 package s4;
 
 /**
- * ‚¨‚Ü‚¯B
- * ƒRƒ“ƒXƒgƒ‰ƒNƒ^ƒXƒR[ƒv‚ÌƒWƒFƒlƒŠƒNƒX‚ÌŒÄ‚Ño‚µƒTƒ“ƒvƒ‹
+ * ãŠã¾ã‘ã€‚
+ * ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ã‚¹ã‚³ãƒ¼ãƒ—ã®ã‚¸ã‚§ãƒãƒªã‚¯ã‚¹ã®å‘¼ã³å‡ºã—ã‚µãƒ³ãƒ—ãƒ«
  * 
  * @author nagise
  */
 public class MainS4_2 {
 	public static void main(String[] args) {
-		// ƒRƒ“ƒXƒgƒ‰ƒNƒ^ƒXƒR[ƒv‚ÌƒWƒFƒlƒŠƒNƒX‚Ì–¾Ž¦“IƒoƒCƒ“ƒh
+		// ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ã‚¹ã‚³ãƒ¼ãƒ—ã®ã‚¸ã‚§ãƒãƒªã‚¯ã‚¹ã®æ˜Žç¤ºçš„ãƒã‚¤ãƒ³ãƒ‰
 		Hoge h1 = new <String>Hoge("hoge");
-		// ƒRƒ“ƒXƒgƒ‰ƒNƒ^ƒXƒR[ƒv‚ÌƒWƒFƒlƒŠƒNƒX‚ÌŒ^„˜_
+		// ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ã‚¹ã‚³ãƒ¼ãƒ—ã®ã‚¸ã‚§ãƒãƒªã‚¯ã‚¹ã®åž‹æŽ¨è«–
 		Hoge h2 = new Hoge("hoge");
 	
-		// ƒ_ƒuƒ‹
+		// ãƒ€ãƒ–ãƒ«
 		Piyo p1 = new <String>Piyo<Integer>(123, "piyo");
 	}
 
 	static class Hoge {
 		/**
-		 * ƒRƒ“ƒXƒgƒ‰ƒNƒ^ƒXƒR[ƒv‚ÌŒ^•Ï”‚ð‚à‚ÂƒRƒ“ƒXƒgƒ‰ƒNƒ^
-		 * @param <T> ƒTƒ“ƒvƒ‹—pƒ_ƒ~[
+		 * ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ã‚¹ã‚³ãƒ¼ãƒ—ã®åž‹å¤‰æ•°ã‚’ã‚‚ã¤ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿
+		 * @param <T> ã‚µãƒ³ãƒ—ãƒ«ç”¨ãƒ€ãƒŸãƒ¼
 		 */
 		public <T> Hoge(T t) {}
 	}
 
 	/**
-	 * @param <T1> ƒTƒ“ƒvƒ‹—pƒ_ƒ~[
+	 * @param <T1> ã‚µãƒ³ãƒ—ãƒ«ç”¨ãƒ€ãƒŸãƒ¼
 	 */
 	static class Piyo<T1> {
 		/**
-		 * ƒRƒ“ƒXƒgƒ‰ƒNƒ^ƒXƒR[ƒv‚ÌŒ^•Ï”‚ð‚à‚ÂƒRƒ“ƒXƒgƒ‰ƒNƒ^
-		 * @param <T2> ƒTƒ“ƒvƒ‹—pƒ_ƒ~[
+		 * ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ã‚¹ã‚³ãƒ¼ãƒ—ã®åž‹å¤‰æ•°ã‚’ã‚‚ã¤ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿
+		 * @param <T2> ã‚µãƒ³ãƒ—ãƒ«ç”¨ãƒ€ãƒŸãƒ¼
 		 */
 		public <T2> Piyo(T1 t1, T2 t2) {}
 	}

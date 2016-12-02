@@ -4,8 +4,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Œ^ˆÀ‘S‚ÈKey / Value ƒXƒgƒAB
- * —\‚ßKey‚ğ—ñ‹“‚µ‚Ä‚¨‚­•K—v‚ª‚ ‚é
+ * å‹å®‰å…¨ãªKey / Value ã‚¹ãƒˆã‚¢ã€‚
+ * äºˆã‚Keyã‚’åˆ—æŒ™ã—ã¦ãŠãå¿…è¦ãŒã‚ã‚‹
  * 
  * @author nagise
  *
@@ -15,18 +15,18 @@ public class KeyValue<KG extends KeyGroup<KG>> {
 	Map<Object, Object> map = new HashMap<>();
 	
 	/**
-	 * ƒXƒgƒA‚É’l‚ğŠi”[‚·‚é
-	 * @param key ƒL[‚ğ•\‚·—ñ‹“
-	 * @param value ’l
+	 * ã‚¹ãƒˆã‚¢ã«å€¤ã‚’æ ¼ç´ã™ã‚‹
+	 * @param key ã‚­ãƒ¼ã‚’è¡¨ã™åˆ—æŒ™
+	 * @param value å€¤
 	 */
 	public <T> void put(KeyGroup<KG>.Key<T> key, T value){
 		map.put(key, value);
 	}
 
 	/**
-	 * ƒXƒgƒA‚©‚ç’l‚ğæ“¾‚·‚é
-	 * @param key ƒL[‚ğ•\‚·—ñ‹“
-	 * @return ’l
+	 * ã‚¹ãƒˆã‚¢ã‹ã‚‰å€¤ã‚’å–å¾—ã™ã‚‹
+	 * @param key ã‚­ãƒ¼ã‚’è¡¨ã™åˆ—æŒ™
+	 * @return å€¤
 	 */
 	@SuppressWarnings("unchecked")
 	public <T> T get(KeyGroup<KG>.Key<T> key) {

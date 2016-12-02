@@ -1,7 +1,7 @@
 package s2;
 
 /**
- * •s•Ï‚ÈUser‚ÌƒTƒ“ƒvƒ‹
+ * ä¸å¤‰ãªUserã®ã‚µãƒ³ãƒ—ãƒ«
  * 
  * @author nagise
  */
@@ -9,18 +9,18 @@ public class ImmutableUser {
 	String name;
 	int age;
 
-	/** ƒRƒ“ƒXƒgƒ‰ƒNƒ^ */
+	/** ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ */
 	public ImmutableUser(String name, int age) {
 		this.name = name;
 		this.age = age;
 	}
 
-	/** @return –¼Ì‚ğæ“¾ */
+	/** @return åç§°ã‚’å–å¾— */
 	public String getName() {
 		return this.name;
 	}
 
-	/** @return ”N—î‚ğæ“¾ */
+	/** @return å¹´é½¢ã‚’å–å¾— */
 	public int getAge() {
 		return this.age;
 	}

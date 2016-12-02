@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * “à•”ƒNƒ‰ƒX‚ð—p‚¢‚½‰Â•Ï’·ƒ^ƒvƒ‹‚Ì—˜—pƒTƒ“ƒvƒ‹
+ * å†…éƒ¨ã‚¯ãƒ©ã‚¹ã‚’ç”¨ã„ãŸå¯å¤‰é•·ã‚¿ãƒ—ãƒ«ã®åˆ©ç”¨ã‚µãƒ³ãƒ—ãƒ«
  * 
  * @author nagise
  */
@@ -22,10 +22,10 @@ public class TupleMain {
 			t2.new Ex<>("piyo");
 		System.out.println(t3);
 		
-		// ƒ^ƒvƒ‹ƒCƒeƒŒ[ƒ^‚Ì—˜—p
+		// ã‚¿ãƒ—ãƒ«ã‚¤ãƒ†ãƒ¬ãƒ¼ã‚¿ã®åˆ©ç”¨
 		List<String> sList = new ArrayList<>();
-		sList.add("‚¢‚¿");
-		sList.add("‚É");
+		sList.add("ã„ã¡");
+		sList.add("ã«");
 		List<Integer> iList = new ArrayList<>();
 		iList.add(123);
 		iList.add(234);

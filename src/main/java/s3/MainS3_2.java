@@ -1,15 +1,15 @@
 package s3;
 
 /**
- * ArrayStoreException ‚ÌƒTƒ“ƒvƒ‹
+ * ArrayStoreException ã®ã‚µãƒ³ãƒ—ãƒ«
  * @author nagise
  */
 public class MainS3_2 {
 	public static void main(String[] args) {
-		String[] stringArray = {"b", "‰³", "•¸"};
+		String[] stringArray = {"ç”²", "ä¹™", "ä¸™"};
 		Object[] objectArray = stringArray;
 		
 		objectArray[1] = 123;
-		// java.lang.ArrayStoreException ‚ª“Š‚°‚ç‚ê‚é
+		// java.lang.ArrayStoreException ãŒæŠ•ã’ã‚‰ã‚Œã‚‹
 	}
 }

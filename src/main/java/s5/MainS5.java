@@ -6,28 +6,28 @@ import java.util.List;
 import s3.*;
 
 /**
- * ƒpƒ‰ƒƒ^ƒ‰ƒCƒYƒhƒ^ƒCƒv‚Ì•Ï«‚ÌƒTƒ“ƒvƒ‹
+ * ãƒ‘ãƒ©ãƒ¡ã‚¿ãƒ©ã‚¤ã‚ºãƒ‰ã‚¿ã‚¤ãƒ—ã®å¤‰æ€§ã®ã‚µãƒ³ãƒ—ãƒ«
  * 
  * @author nagise
  */
 public class MainS5 {
 	public static void main(String[] args) {
-		// ”ñ•Ï«
+		// éå¤‰æ€§
 		List<A> listA = new ArrayList<A>();
 		List<B> listB = listA; // NG
 
-		// ‹¤•Ï«
-		// –ß‚è’l‚ÌŒ^•Ï”‚Íg‚¦‚é
-		// ˆø”‚ÌŒ^•Ï”‚Íg‚¦‚È‚¢(null‚¾‚¯‰Â)
+		// å…±å¤‰æ€§
+		// æˆ»ã‚Šå€¤ã®å‹å¤‰æ•°ã¯ä½¿ãˆã‚‹
+		// å¼•æ•°ã®å‹å¤‰æ•°ã¯ä½¿ãˆãªã„(nullã ã‘å¯)
 		List<? extends A> listExA = new ArrayList<B>();
-		A a = listExA.get(0); // AŒ^‚Æ‚µ‚Äæ“¾‚Å‚«‚é
-		listExA.add(null); // null‚¾‚¯‚ğadd‚Å‚«‚é
+		A a = listExA.get(0); // Aå‹ã¨ã—ã¦å–å¾—ã§ãã‚‹
+		listExA.add(null); // nullã ã‘ã‚’addã§ãã‚‹
 
-		// ”½•Ï«
-		// –ß‚è’l‚ÌŒ^•Ï”‚Íg‚¦‚È‚¢(ObjectŒ^ˆµ‚¢)
-		// ˆø”‚ÌŒ^•Ï”‚Íg‚¦‚é
+		// åå¤‰æ€§
+		// æˆ»ã‚Šå€¤ã®å‹å¤‰æ•°ã¯ä½¿ãˆãªã„(Objectå‹æ‰±ã„)
+		// å¼•æ•°ã®å‹å¤‰æ•°ã¯ä½¿ãˆã‚‹
 		List<? super C> listSuC = new ArrayList<B>();
-		Object o = listSuC.get(0); // ‘S‚Ä‚ÌeObjectŒ^‚Æ‚µ‚Ä‚¾‚¯æ“¾‚Å‚«‚é
-		listSuC.add(new C()); // CŒ^‚ğadd‚Å‚«‚é
+		Object o = listSuC.get(0); // å…¨ã¦ã®è¦ªObjectå‹ã¨ã—ã¦ã ã‘å–å¾—ã§ãã‚‹
+		listSuC.add(new C()); // Cå‹ã‚’addã§ãã‚‹
 	}
 }

@@ -1,22 +1,22 @@
 package s2;
 
 /**
- * ‰Â•Ï‚Èƒ†[ƒU[‚ÌƒTƒ“ƒvƒ‹
+ * å¯å¤‰ãªãƒ¦ãƒ¼ã‚¶ãƒ¼ã®ã‚µãƒ³ãƒ—ãƒ«
  * 
  * @author nagise
  */
 public class MutableUser extends ImmutableUser {
-	/** ƒRƒ“ƒXƒgƒ‰ƒNƒ^ */
+	/** ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ */
 	public MutableUser(String name, int age) {
 		super(name, age);
 	}
 
-	/** @param name ƒ†[ƒU[–¼‚ğİ’è */
+	/** @param name ãƒ¦ãƒ¼ã‚¶ãƒ¼åã‚’è¨­å®š */
 	public void setName(String name) {
 		this.name = name;
 	}
 
-	/** @param age ”N—î‚ğİ’è */
+	/** @param age å¹´é½¢ã‚’è¨­å®š */
 	public void setAge(int age) {
 		this.age = age;
 	}

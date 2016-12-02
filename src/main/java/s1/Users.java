@@ -3,9 +3,9 @@ package s1;
 import java.util.ArrayList;
 
 /**
- * User‚Ìˆê——‚ğ•\‚·Œ^B
- * HAS-AŠÖŒW‚ÌƒTƒ“ƒvƒ‹‚Æ‚µ‚ÄƒtƒB[ƒ‹ƒh‚ÉArrayList‚ğ‚à‚½‚¹‚½B
- * ArrayList‚Í‰B•Á‚³‚ê‚Ä‚¨‚èA’¼Ú‘€ì‚·‚é‚±‚Æ‚Í‚Å‚«‚È‚¢B
+ * Userã®ä¸€è¦§ã‚’è¡¨ã™å‹ã€‚
+ * HAS-Aé–¢ä¿‚ã®ã‚µãƒ³ãƒ—ãƒ«ã¨ã—ã¦ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ã«ArrayListã‚’ã‚‚ãŸã›ãŸã€‚
+ * ArrayListã¯éš è”½ã•ã‚Œã¦ãŠã‚Šã€ç›´æ¥æ“ä½œã™ã‚‹ã“ã¨ã¯ã§ããªã„ã€‚
  * 
  * @author nagise
  */
@@ -13,16 +13,16 @@ public class Users {
 	ArrayList<User> userList = new ArrayList<>();
 
 	/**
-	 * ƒ†[ƒU[‚Ì’Ç‰Á
-	 * @param user ’Ç‰Á‚·‚éƒ†[ƒU[
+	 * ãƒ¦ãƒ¼ã‚¶ãƒ¼ã®è¿½åŠ 
+	 * @param user è¿½åŠ ã™ã‚‹ãƒ¦ãƒ¼ã‚¶ãƒ¼
 	 */
 	public void add(User user) {
 		this.userList.add(user);
 	}
 	/**
-	 * ƒ†[ƒU[‚Ìæ“¾
-	 * @param index æ“¾‘ÎÛ‚Æ‚È‚éƒCƒ“ƒfƒbƒNƒX
-	 * @return æ“¾‚³‚ê‚½ƒ†[ƒU[
+	 * ãƒ¦ãƒ¼ã‚¶ãƒ¼ã®å–å¾—
+	 * @param index å–å¾—å¯¾è±¡ã¨ãªã‚‹ã‚¤ãƒ³ãƒ‡ãƒƒã‚¯ã‚¹
+	 * @return å–å¾—ã•ã‚ŒãŸãƒ¦ãƒ¼ã‚¶ãƒ¼
 	 */
 	public User get(int index) {
 		return this.userList.get(index);

@@ -9,37 +9,37 @@ import s3.C;
 
 public class MainS6 {
 	public static void main(String[] args) {
-		new Hoge<A>(); // © NG
-		new Hoge<B>(); // © OK
-		new Hoge<B2>(); // © NG
-		new Hoge<C>(); // © OK
+		new Hoge<A>(); // â† NG
+		new Hoge<B>(); // â† OK
+		new Hoge<B2>(); // â† NG
+		new Hoge<C>(); // â† OK
 		
 		Bar bar = new Bar();
-		// ƒƒ\ƒbƒh‚Ì–ß‚è’l‚ª’ŠÛŒ^‚ÌFoo‚Å‚È‚­A‹ïÛŒ^‚ÌBar‚Å‚ ‚é“_‚É’–Ú
+		// ãƒ¡ã‚½ãƒƒãƒ‰ã®æˆ»ã‚Šå€¤ãŒæŠ½è±¡å‹ã®Fooã§ãªãã€å…·è±¡å‹ã®Barã§ã‚ã‚‹ç‚¹ã«æ³¨ç›®
 		Bar bar2 = bar.getConcreteObject();
 	}
 
 	/**
-	 * @param <T> ‹«ŠE‚Ì‚ ‚éŒ^•Ï”Bsuper‚Íƒ_ƒ
+	 * @param <T> å¢ƒç•Œã®ã‚ã‚‹å‹å¤‰æ•°ã€‚superã¯ãƒ€ãƒ¡
 	 */
 	static class Hoge<T extends B> {}
 
 	/**
-	 * @param <T> ‹«ŠE‚Ì‚ ‚éŒ^•Ï”B
-	 * 	& ‚ÅŒq‚¢‚ÅƒCƒ“ƒ^ƒtƒF[ƒX‚ğ‹«ŠE‚É‰Á‚¦‚é‚±‚Æ‚ª‚Å‚«‚é
+	 * @param <T> å¢ƒç•Œã®ã‚ã‚‹å‹å¤‰æ•°ã€‚
+	 * 	& ã§ç¹‹ã„ã§ã‚¤ãƒ³ã‚¿ãƒ•ã‚§ãƒ¼ã‚¹ã‚’å¢ƒç•Œã«åŠ ãˆã‚‹ã“ã¨ãŒã§ãã‚‹
 	 */
 	static class Piyo<T extends A & Serializable> {}
 
 	/**
-	 * Ä‹NƒWƒFƒlƒŠƒNƒX‚ÌƒTƒ“ƒvƒ‹
-	 * @param <T> ‚±‚ÌT‚É‚ÍFoo‚Ì‹ïÛŒ^‚ğŒp³‚ÅƒoƒCƒ“ƒh‚·‚é
+	 * å†èµ·ã‚¸ã‚§ãƒãƒªã‚¯ã‚¹ã®ã‚µãƒ³ãƒ—ãƒ«
+	 * @param <T> ã“ã®Tã«ã¯Fooã®å…·è±¡å‹ã‚’ç¶™æ‰¿ã§ãƒã‚¤ãƒ³ãƒ‰ã™ã‚‹
 	 */
 	abstract static class Foo<T extends Foo<T>> {
 		public abstract T getConcreteObject();
 	}
 	
 	/**
-	 * ‹ïÛŒ^‚ÌƒoƒCƒ“ƒh
+	 * å…·è±¡å‹ã®ãƒã‚¤ãƒ³ãƒ‰
 	 */
 	static class Bar extends Foo<Bar> {
 		@Override

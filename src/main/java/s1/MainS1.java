@@ -4,21 +4,21 @@ import java.util.ArrayList;
 
 public class MainS1 {
 	public static void main(String[] args) {
-		// *** IS-AŠÖŒW
+		// *** IS-Aé–¢ä¿‚
 		UserList userList = new UserList();
-		userList.add(new User("‚È‚¬‚¹", 0x24));
-		userList.add(new User("‚¢‚Ì‚¤‚¦", 17));
-		// ArrayList‚Æ‚µ‚Ä‚Ì‹@”\‚ğˆê’Ê‚èg‚¤‚±‚Æ‚ª‚Å‚«‚é
+		userList.add(new User("ãªãã›", 0x24));
+		userList.add(new User("ã„ã®ã†ãˆ", 17));
+		// ArrayListã¨ã—ã¦ã®æ©Ÿèƒ½ã‚’ä¸€é€šã‚Šä½¿ã†ã“ã¨ãŒã§ãã‚‹
 		userList.remove(0);
-		// ArrayList<User>‚ğŒp³‚µ‚Ä‚¢‚é‚Ì‚ÅAArrayList<User>‚Æ‚µ‚Äˆµ‚¦‚é
+		// ArrayList<User>ã‚’ç¶™æ‰¿ã—ã¦ã„ã‚‹ã®ã§ã€ArrayList<User>ã¨ã—ã¦æ‰±ãˆã‚‹
 		ArrayList<User> arrayList = userList;
 		System.out.println(arrayList);
 		
-		// *** HAS-AŠÖŒW
+		// *** HAS-Aé–¢ä¿‚
 		Users users = new Users();
-		users.add(new User("‚È‚¬‚¹", 0x24));
-		users.add(new User("‚¢‚Ì‚¤‚¦", 17));
-		// À‘•‚µ‚½‹@”\‚µ‚©—˜—p‚·‚é‚±‚Æ‚ª‚Å‚«‚È‚¢
+		users.add(new User("ãªãã›", 0x24));
+		users.add(new User("ã„ã®ã†ãˆ", 17));
+		// å®Ÿè£…ã—ãŸæ©Ÿèƒ½ã—ã‹åˆ©ç”¨ã™ã‚‹ã“ã¨ãŒã§ããªã„
 		System.out.println(users.get(0));
 	}
 }

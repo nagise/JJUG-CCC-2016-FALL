@@ -1,7 +1,7 @@
 package hell;
 
 /**
- * 型安全なkey / valueストア用のキーの列挙
+ * 蝙句ｮ牙�ｨ縺ｪkey / value繧ｹ繝医い逕ｨ縺ｮ繧ｭ繝ｼ縺ｮ蛻玲嫌
  * 
  * @author nagise
  */

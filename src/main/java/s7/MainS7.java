@@ -1,14 +1,14 @@
 package s7;
 
 /**
- * 内部クラスのサンプル
+ * 蜀�驛ｨ繧ｯ繝ｩ繧ｹ縺ｮ繧ｵ繝ｳ繝励Ν
  * @author nagise
  */
 public class MainS7 {
 	public static void main(String[] args) {
-		// まずouterのインスタンスを作る
+		// 縺ｾ縺嗤uter縺ｮ繧､繝ｳ繧ｹ繧ｿ繝ｳ繧ｹ繧剃ｽ懊ｋ
 		Outer<String> outer = new Outer<String>();
-		// 次にouter.new で内部クラスのインスタンスを作る
+		// 谺｡縺ｫouter.new 縺ｧ蜀�驛ｨ繧ｯ繝ｩ繧ｹ縺ｮ繧､繝ｳ繧ｹ繧ｿ繝ｳ繧ｹ繧剃ｽ懊ｋ
 		Outer<String>.Inner inner = outer.new Inner();
 	}
 }

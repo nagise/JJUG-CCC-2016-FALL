@@ -6,27 +6,27 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * ƒCƒ“ƒXƒ^ƒ“ƒXƒXƒR[ƒv‚ÌƒWƒFƒlƒŠƒNƒX‚ÌƒTƒ“ƒvƒ‹
+ * ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã‚¹ã‚³ãƒ¼ãƒ—ã®ã‚¸ã‚§ãƒãƒªã‚¯ã‚¹ã®ã‚µãƒ³ãƒ—ãƒ«
  * 
  * @author nagise
  */
 public class MainS4_4 {
-	/** ‚Ğ‚Ç‚¢ƒpƒ‰ƒƒ^ƒ‰ƒCƒYƒhƒ^ƒCƒv‚Ì—á */
+	/** ã²ã©ã„ãƒ‘ãƒ©ãƒ¡ã‚¿ãƒ©ã‚¤ã‚ºãƒ‰ã‚¿ã‚¤ãƒ—ã®ä¾‹ */
 	Map<String, Map<Integer, List<String>>> sample1;
 
-	/** “r’†‚ÅˆÏ÷ƒNƒ‰ƒX‚ğ‹²‚ß‚Î‚»‚ê‚È‚è‚Éƒ}ƒV‚É */
+	/** é€”ä¸­ã§å§”è­²ã‚¯ãƒ©ã‚¹ã‚’æŒŸã‚ã°ãã‚Œãªã‚Šã«ãƒã‚·ã« */
 	Map<String, HogeMap> sample2;
 
 	/**
-	 * ‚È‚É‚©‚ğŠÇ—‚·‚éƒNƒ‰ƒX
+	 * ãªã«ã‹ã‚’ç®¡ç†ã™ã‚‹ã‚¯ãƒ©ã‚¹
 	 */
 	static class HogeMap {
 		Map<Integer, List<String>> map = new HashMap<>();
 		
 		/**
-		 * Š’è”Ô†‚É’l‚ğ’Ç‰Á‚·‚é
-		 * @param no ”Ô†
-		 * @param value ’Ç‰Á‚·‚é’l
+		 * æ‰€å®šç•ªå·ã«å€¤ã‚’è¿½åŠ ã™ã‚‹
+		 * @param no ç•ªå·
+		 * @param value è¿½åŠ ã™ã‚‹å€¤
 		 */
 		public void add(int no, String value) {
 			List<String> list = map.get(no);
@@ -37,9 +37,9 @@ public class MainS4_4 {
 			list.add(value);
 		}
 		/**
-		 * Š’è”Ô†‚É“o˜^‚³‚ê‚½’l‚Ìˆê——‚ğæ“¾
-		 * @param no ”Ô†
-		 * @return ˆê—— (–{“–‚Í‰Â•Ï‚ÈQÆ‚Å•Ô‚·‚Æ“à•”\‘¢‚ğ–\˜I‚·‚é‚Ì‚Å‚æ‚­‚È‚¢)
+		 * æ‰€å®šç•ªå·ã«ç™»éŒ²ã•ã‚ŒãŸå€¤ã®ä¸€è¦§ã‚’å–å¾—
+		 * @param no ç•ªå·
+		 * @return ä¸€è¦§ (æœ¬å½“ã¯å¯å¤‰ãªå‚ç…§ã§è¿”ã™ã¨å†…éƒ¨æ§‹é€ ã‚’æš´éœ²ã™ã‚‹ã®ã§ã‚ˆããªã„)
 		 */
 		public List<String> get(int no) {
 			return map.get(no);
