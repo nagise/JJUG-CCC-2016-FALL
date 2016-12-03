@@ -47,7 +47,7 @@ public class MainS8 {
 		// 一見理想的に見えるが実はIDEの入力補完とは相性が悪くて使いにくい
 		// T...dummy に nullを渡すと、型を取得するための配列が渡されないのでバグる
 		// null が T[] とも new T[]{null}とも取れるので表現が曖昧に
-		User u10 = MainS8.sample4("{}", null);
+//		User u10 = MainS8.sample4("{}", null);
 		// テクニックを理解されないとむしろ記述がひどいことに
 		User u11 = MainS8.sample4("{}", new User[]{null});
 

@@ -9,9 +9,9 @@ import s3.C;
 
 public class MainS6 {
 	public static void main(String[] args) {
-		new Hoge<A>(); // ← NG
+		//new Hoge<A>(); // ← NG
 		new Hoge<B>(); // ← OK
-		new Hoge<B2>(); // ← NG
+		//new Hoge<B2>(); // ← NG
 		new Hoge<C>(); // ← OK
 		
 		Bar bar = new Bar();
